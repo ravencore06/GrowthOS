@@ -43,6 +43,13 @@ export const PLATFORMS: Platform[] = [
     maxCaption: 5000,
     hashtagLimit: 15,
   },
+  {
+    id: "facebook",
+    name: "Facebook",
+    color: "#1877F2",
+    maxCaption: 63206,
+    hashtagLimit: 30,
+  },
 ];
 
 export function getPlatform(id: string) {

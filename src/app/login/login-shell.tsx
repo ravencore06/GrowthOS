@@ -1,7 +1,7 @@
 "use client";
 
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
-import { StaggeredGridBg } from "@/components/ui/staggered-grid-bg";
+import { HalfArcGridBg } from "@/components/ui/half-arc-grid-bg";
 import { LiquidMetalButton } from "@/components/ui/liquid-metal";
 import { LoginForm } from "./login-form";
 import { ArrowRight } from "lucide-react";
@@ -35,8 +35,8 @@ export function LoginShell() {
           </LiquidMetalButton>
         </div>
 
-        {/* Dark staggered grid background */}
-        <StaggeredGridBg />
+        {/* Half arc grid background */}
+        <HalfArcGridBg />
 
         {/* Center connect card */}
         {!showForm && (

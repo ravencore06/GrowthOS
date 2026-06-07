@@ -4,7 +4,32 @@ export type PlatformId =
   | "whatsapp"
   | "linkedin"
   | "pinterest"
-  | "youtube";
+  | "youtube"
+  | "facebook";
+
+export type ZernioPostStatus = "draft" | "scheduled" | "published" | "failed" | "partial";
+
+export interface ZernioConnectedAccount {
+  id: string;
+  platform: string;
+  zernioAccountId: string;
+  name: string;
+  username: string | null;
+  avatar: string | null;
+  status: string;
+  connectedAt: string;
+}
+
+export interface ZernioScheduledPost {
+  id: string;
+  zernioPostId: string | null;
+  title: string;
+  content: string;
+  platforms: string[];
+  scheduledAt: string;
+  status: ZernioPostStatus;
+  createdAt: string;
+}
 
 export type ContentTone = "professional" | "casual" | "witty" | "inspirational";
 export type ContentFormat = "post" | "story" | "reel" | "thread" | "video";
@@ -52,7 +77,7 @@ export interface ScheduledPost {
   content: string;
   platforms: PlatformId[];
   scheduledAt: string;
-  status: "scheduled" | "published" | "failed";
+  status: "scheduled" | "published" | "failed" | "partial";
   mediaType?: "image" | "video" | "carousel";
 }
 
