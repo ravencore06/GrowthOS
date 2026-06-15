@@ -16,12 +16,7 @@ Instagram, Twitter/X, WhatsApp, LinkedIn, Pinterest, YouTube
 
 Navigation uses a **Glass Dock** (macOS-style) at the bottom of the screen.
 
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
+#
 
 
 
