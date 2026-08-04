@@ -4,7 +4,7 @@ All-in-one social media growth platform: content generation, trend detection, ca
 
 ## Platforms
 
-Instagram, Twitter/X, WhatsApp, LinkedIn, Pinterest, YouTube
+Instagram, Twitter/X, WhatsApp, LinkedIn, Pinterest, YouTube, Reddit
 
 ## Features
 
